@@ -23,6 +23,7 @@ id = setInterval(function() {
     if(counter < 0) {
         clearInterval(id);
         text.innerHTML = "TIME'S UP!";
+        document.getElementById("text").style.color="#c0392b"
     } else {
         text.innerHTML = counter.toString();
     }
