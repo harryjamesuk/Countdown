@@ -1,1 +1,25 @@
-Hello world
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+<script>
+var downloadButton = document.getElementById("download");
+var counter = 10;
+var newElement = document.createElement("p");
+newElement.innerHTML = "10";
+var id;
+
+downloadButton.parentNode.replaceChild(newElement, downloadButton);
+
+id = setInterval(function() {
+    counter--;
+    if(counter < 0) {
+        clearInterval(id);
+        newElement.innerHTML = "TIME'S UP!";
+    } else {
+        newElement.innerHTML = counter.toString();
+    }
+}, 1000);
+</script>
+</body>
