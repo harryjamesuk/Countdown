@@ -14,9 +14,9 @@ id = setInterval(function() {
     counter--;
     if(counter < 0) {
         clearInterval(id);
-        newElement.innerHTML = "TIME'S UP!";
+        text.innerHTML = "TIME'S UP!";
     } else {
-        newElement.innerHTML = counter.toString();
+        text.innerHTML = counter.toString();
     }
 }, 1000);
 </script>
